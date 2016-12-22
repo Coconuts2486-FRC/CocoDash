@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="CocoDash.GyroDisplay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CocoDash"
+             mc:Ignorable="d" 
+             Height="200" Width="200">
+    <Grid>
+        <Canvas x:Name="canvas">
+            <Line x:Name="line"
+                  X1="0" Y1="0"
+                  X2="50" Y2="50"
+                  Stroke="#FFBBBB00"
+                  StrokeThickness="4" RenderTransformOrigin="0.5,0.5" 
+                  >
+            </Line>
+        </Canvas>
+        <Ellipse x:Name="circle"
+                 StrokeThickness="5" 
+                 Stroke="#FF950000"/>
+    </Grid>
+</UserControl>
